@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Page </title>
+    <link rel = "stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- <a href = "https://pranavsuriya-sr.github.io/karkaKasadara/"><button class="top-left-button">Back to Home Page</button></a> -->
+
+    <header id="nav-wrapper">
+        <nav id="nav">
+          <div class="nav left">
+            <span class="gradient skew"><h1 class="logo un-skew"><a href="https://pranavsuriya-sr.github.io/karkaKasadara/">கற்க கசடற</a></h1></span>
+            <button id="menu" class="btn-nav"><span class="fas fa-bars"></span></button>
+          </div>
+          <div class="nav right">
+          <a href="https://pranavsuriya-sr.github.io/karkaKasadara/" class="nav-link"><span class="nav-link-span"><span class="u-nav">Home</span></span></a>
+          <a href="https://pranavsuriya-sr.github.io/karkaKasadaraResources/" class="nav-link"><span class="nav-link-span"><span class="u-nav">Resources</span></span></a>
+          <a href="https://pranavsuriya-sr.github.io/karkaKasadaraChatHome/" class="nav-link active"><span class="nav-link-span"><span class="u-nav">Chat</span></span></a>
+          <a href="https://pranavsuriya-sr.github.io/karkaKasadaraMeet/" class="nav-link"><span class="nav-link-span"><span class="u-nav">Meet</span></span></a>
+          <a href="https://pranavsuriya-sr.github.io/karkaKasadaraGame1/" class="nav-link"><span class="nav-link-span"><span class="u-nav">Games</span></span></a>
+          <a href="https://pranavsuriya-sr.github.io/KarkaKasadaraJobs/" class="nav-link"><span class="nav-link-span"><span class="u-nav">Careers</span></span></a>
+          <a href="https://pranavsuriya-sr.github.io/karkaKasadaraLogin/" class="nav-link"><span class="nav-link-span"><span class="u-nav">Login</span></span></a>
+          <a href="https://pranavsuriya-sr.github.io/karkaKasadaraJobAdd//" class="nav-link"><span class="nav-link-span"><span class="u-nav">Add Jobs</span></span></a>
+        </div>
+        </nav>
+      </header>
+      <main>
+        <section id="home">
+    
+        </section>
+        <section id="about">
+    
+        </section>
+        <section id="work">
+    
+        </section>
+        <section id="contact">
+    
+        </section>
+      </main>
+
+      
+
+    <div class = "contMag" style="margin-top: 5%;">
+      <h1 style="margin-left: 44%;">Chat Room 3</h1>
+    <div id="messages" ></div>
+    </div>
+
+
+    <div class="input-container">
+        <input type="text" id="textMsg" onkeydown="enterPress(event)"  placeholder="ENTER YOUR MSG..." >
+    </div>
+
+    <div class ="input-container">
+    <input  type="submit" value="send" class="submBtn" onclick="module.sendMsg()">
+        </div>
+    <script>
+         module = {};
+        function enterPress(event) {
+            if (event.key === "Enter") {
+                module.sendMsg();
+            }
+        }
+
+    </script>
+
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>
